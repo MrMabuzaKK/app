@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import { View, Text, SafeAreaView, Image, ImageBackground, TouchableOpacity } from 'react-native';
 
 //Assets
 import avator from '../../assets/Layer-2.png';
+import image from '../../assets/mobile.jpg';
 //Utils
 import mainStyles from '../../utils/MainGlobalStyles';
 
@@ -50,6 +51,7 @@ import about         from '../../assets/icons/about.png';
 
 function Dashboard({ navigation }) {
 	return (
+		<ImageBackground source={image} resizeMode="cover" style={mainStyles.backgroundImage}>
 			<View>
 				<View styles={{ 'width': 300, 'height': 300, 'backgroundColor':'#000000'}}>
 					<Image source={avator} style={mainStyles.avator} />
@@ -70,7 +72,7 @@ function Dashboard({ navigation }) {
 
 					<TouchableOpacity onPress={() => navigation.navigate('Bookings')}>
 						<Image source={booking} style={mainStyles.featuresIcon}/>
-						<Text style={mainStyles.featureTitle}>Bookings</Text>
+						<Text style={mainStyles.featureTitle}>Book</Text>
 					</TouchableOpacity>
 
 				</View>
@@ -120,7 +122,7 @@ function Dashboard({ navigation }) {
 						<Text style={mainStyles.featureTitle}>Notify</Text>
 					</TouchableOpacity>
 
-					<TouchableOpacity onPress={() => navigation.navigate('Sales Tips')}>
+					<TouchableOpacity onPress={() => navigation.navigate('Sales')}>
 						<Image source={tips} style={mainStyles.featuresIcon}/>
 						<Text style={mainStyles.featureTitle}>Sales Tips</Text>
 					</TouchableOpacity>
@@ -134,6 +136,7 @@ function Dashboard({ navigation }) {
 
 
 			</View>
+		</ImageBackground>
 	)
 }
 

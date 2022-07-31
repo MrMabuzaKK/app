@@ -53,24 +53,28 @@ const styles = StyleSheet.create({
 			flex: 1,
 			backgroundColor: 'grey',
 			alignItems: 'center',
-			justifyContent: 'center'
+			justifyContent: 'center',
+			borderRadius: 14
 		},
 		inner2: {
 			flex: 1,
 			backgroundColor: 'grey',
 			alignItems: 'center',
-			justifyContent: 'center'
+			justifyContent: 'center',
+			borderRadius: 14
 		},
 		inner3: {
 			flex: 1,
 			backgroundColor: 'grey',
 			alignItems: 'center',
-			justifyContent: 'center'
+			justifyContent: 'center',
+			borderRadius: 14
 		},
 		inner4: {
 			flex: 1,
 			backgroundColor: 'grey',
 			alignItems: 'center',
-			justifyContent: 'center'
+			justifyContent: 'center',
+			borderRadius: 14
 		}
 });

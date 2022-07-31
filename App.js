@@ -18,6 +18,8 @@ import FAQScreen from './screens/private/FAQ';
 import EventsScreen from './screens/private/Events';
 import MasterClassScreen from './screens/private/MasterClass';
 import PodcastScreen from './screens/private/Podcast';
+import SalesScreen from './screens/private/Sales';
+import AboutScreen from './screens/private/About';
 
 function App() {
 	return (
@@ -47,7 +49,8 @@ function App() {
 				<Stack.Screen name="Logout" component={LoginScreen} />
 				<Stack.Screen name="Podcast" component={PodcastScreen} />
 				<Stack.Screen name="MasterClass" component={MasterClassScreen} />
-
+				<Stack.Screen name="Sales" component={SalesScreen} />
+				<Stack.Screen name="About" component={AboutScreen} />
 
 			</Stack.Navigator>
 		</NavigationContainer>

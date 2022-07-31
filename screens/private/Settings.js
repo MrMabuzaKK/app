@@ -9,8 +9,15 @@ const Settings = () => {
     <View style={styles.container}>
       <Text>Notifications</Text>
       <Switch
-        trackColor={{ false: "#767577", true: "#81b0ff" }}
-        thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+        trackColor={{ false: 'black', true: 'grey'}}
+        thumbColor={isEnabled ? 'white' : 'black'}
+        ios_backgroundColor="#3e3e3e"
+        onValueChange={toggleSwitch}
+        value={isEnabled}
+      />
+      <Switch
+        trackColor={{ false: 'black', true: 'grey'}}
+        thumbColor={isEnabled ? 'white' : 'black'}
         ios_backgroundColor="#3e3e3e"
         onValueChange={toggleSwitch}
         value={isEnabled}

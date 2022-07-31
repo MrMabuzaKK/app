@@ -1,58 +1,131 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Image, SafeAreaView, TouchableOpacity, Text, View } from 'react-native';
+
+import avator from '../../assets/Layer-2.png';
+
+import mainStyles from '../../utils/MainGlobalStyles';
+
+import heartActive from '../../assets/icons/heartActive.png';
+
 
 export default class Boxes extends React.Component {
 
 	render() {
 		return(
-			<View style={styles.container}>
+			<SafeAreaView style={{'flex':1}}>
 
-				<View style={styles.box}>
-						<View style={styles.inner}>
-								<Text>Kaya FM</Text>
-						</View>
-				</View>	
+				<View style={styles.container}>
 
-				<View style={styles.box}>
-						<View style={styles.inner}>
-								<Text>Sasfin Interview</Text>
+					<View style={styles.box}>
+						<View style={styles.inner1}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>Kaya FM</Text>
+								</TouchableOpacity>
 						</View>
-				</View>	
+					</View>	
 
-				<View style={styles.box}>
-						<View style={styles.inner}>
-								<Text>Wits University</Text>
+					<View style={styles.box}>
+						<View style={styles.inner2}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>Sasfin Interview</Text>
+								</TouchableOpacity>
 						</View>
+					</View>	
+
+					<View style={styles.box}>
+						<View style={styles.inner3}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>Wits University</Text>
+								</TouchableOpacity>
+						</View>
+					</View>	
+
+					<View style={styles.box}>
+						<View style={styles.inner4}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>SS & AA</Text>
+								</TouchableOpacity>
+						</View>
+					</View>	
+				
+
+					<View style={styles.box}>
+						<View style={styles.inner4}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>VW Sales Workshop</Text>
+								</TouchableOpacity>
+						</View>
+					</View>	
+
+					<View style={styles.box}>
+						<View style={styles.inner4}>
+								<TouchableOpacity style={[styles.btnPrimary, styles.mt10, styles.contentCenter]}  onPress={() => { ({})}}>
+									<Text style={[styles.textWhite]}>Metro FM</Text>
+								</TouchableOpacity>
+						</View>
+					</View>	
 				</View>
-
-				<View style={styles.box}>
-						<View style={styles.inner}>
-								<Text>SS & AA</Text>
-						</View>
-				</View>	
-
-			</View>
-		);
+				
+			</SafeAreaView>
+			);
 	}
 }
 
 const styles = StyleSheet.create({
 		container: {
 			width: '100%',
-			height: '85%',
+			height: '100%',
 			padding: 5,
 			flexDirection:'row',
-			flexWrap: 'wrap'
+			flexWrap: 'wrap',
+			marginTop: 20
 		},
 		box: {
 			width: '50%',
-			height: '50%',
-			padding: 5
+			height: '30%',
+			padding: 5,
 		},
-		inner: {
+		inner1: {
 			flex: 1,
-			backgroundColor: 'grey',
+			backgroundColor: 'white',
+			alignItems: 'center',
+			justifyContent: 'center',
+			borderRadius: 14
+		},
+		inner2: {
+			flex: 1,
+			backgroundColor: 'white',
+			alignItems: 'center',
+			justifyContent: 'center',
+			borderRadius: 14
+		},
+		inner3: {
+			flex: 1,
+			backgroundColor: 'white',
+			alignItems: 'center',
+			justifyContent: 'center',
+			borderRadius: 14
+		},
+		inner4: {
+			flex: 1,
+			backgroundColor: 'white',
+			alignItems: 'center',
+			justifyContent: 'center',
+			borderRadius: 14
+		},
+		text: {
+			flex: 1,
+			alignItems: 'center',
+			justifyContent: 'flex-end',
+			marginLeft: 130,
+			fontWeight: 'bold',
+			padding: 50
+		},
+		text2: {
 			alignItems: 'center',
 			justifyContent: 'center'
-		}
+		},
+		textWhite: {
+			fontWeight: 'bold',
+		},
 });

@@ -5,7 +5,7 @@ function Update({ navigation }) {
 	return (
 		<SafeAreaView style={{'flex':1}}>
 			<View style={styles.authContainer}>
-				<Text style={[styles.titleL, styles.mb50]}>Update Profile Details</Text>
+				<Text style={[styles.titleL, styles.mb50]}>Update Details</Text>
 				<TextInput style={[styles.customeInput, styles.mt20]} placeholder="Name & Surname"></TextInput>
 				<TextInput style={[styles.customeInput, styles.mt10]} placeholder="Email address"></TextInput>
 				<TextInput style={[styles.customeInput, styles.mt10]} placeholder="Occupation"></TextInput>
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	lightColor: {
-		opacity: .5
+		opacity: 0.5
 	}
 })
 
